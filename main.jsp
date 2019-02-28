@@ -59,19 +59,7 @@
 		script.close();
 		return;
 	}
-	/* 이메일 인증 체크
-	boolean emailChecked = new UserDAO().getUserEmailChecked(userID);
-	if(emailChecked == false)
-	{
-		PrintWriter script = response.getWriter();
-		script.println("<script>");
-		script.println("alert('비밀번호 오류')");
-		script.println("location.href='emailSendConfirm.jsp';");
-		script.println("</script>");
-		script.close();
-		return;
-	}
-	*/
+
 %>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">

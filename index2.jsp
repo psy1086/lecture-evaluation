@@ -64,7 +64,8 @@
 		script.close();
 		return;
 	}
-	/* 이메일 인증 체크
+	
+	// 이메일 인증 체크
 	boolean emailChecked = new UserDAO().getUserEmailChecked(userID);
 	if(emailChecked == false)
 	{
@@ -76,7 +77,7 @@
 		script.close();
 		return;
 	}
-	*/
+	
 %>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -86,9 +87,7 @@
 			</button>
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index2.jsp">Main</a>
-				</li>
+			
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">Menu</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown">
@@ -105,6 +104,7 @@
 %>
 						<a class="dropdown-item" href="userLogoutAction.jsp">Logout</a>
 						<a class="dropdown-item" href="main.jsp">Boder</a>
+						<a class="dropdown-item" href="index2.jsp">main</a>
 <%
 	}
 %>

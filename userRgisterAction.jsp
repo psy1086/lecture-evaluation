@@ -65,8 +65,8 @@
 		session.setAttribute("userID", userID);
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
-		script.println("location.href='index2.jsp'");
-		//script.println("location.href='emailSendAction.jsp'"); 연결지연 - 랜선으로 연결 해봐야함.
+		//script.println("location.href='index2.jsp'");
+		script.println("location.href='emailSendAction.jsp'"); //연결지연 - 랜선으로 연결 해봐야함.
 		script.println("</script>");
 		script.close();
 		return;

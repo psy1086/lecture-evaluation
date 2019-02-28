@@ -55,11 +55,11 @@
 	Properties p = new Properties();
 	p.put("mail.smtp.user", from);
 	p.put("mail.smtp.host", "smtp.googlemail.com"); // 구글 이메일 
-	p.put("mail.smtp.prot", 456); // 구글서비스에서 제공하는 기본 포트
+	p.put("mail.smtp.prot", 465); // 구글서비스에서 제공하는 기본 포트
 	p.put("mail.smtp.starttls.enalbe", "true");
 	p.put("mail.smtp.auth", "true");
 	p.put("mail.smtp.debug", "true");
-	p.put("mail.smtp.socketFactory.port", 456);	// 구글 서비스에서 제공하는 기본 포트
+	p.put("mail.smtp.socketFactory.port", 465);	// 구글 서비스에서 제공하는 기본 포트
 	p.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 	p.put("mail.smtp.socketFactory.fallback", "false");
 		

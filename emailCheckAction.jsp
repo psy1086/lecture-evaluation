@@ -42,7 +42,7 @@
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('인증완료.');");
-		script.println("history.href = 'index2.jsp';");
+		script.println("location.href = 'index2.jsp';");
 		script.println("</script>");
 		script.close();
 		return;
@@ -52,7 +52,7 @@
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('인증실패.');");
-		script.println("history.href = 'index2.jsp';");
+		script.println("location.href = 'index2.jsp';");
 		script.println("</script>");
 		script.close();
 		return;
